@@ -1,0 +1,180 @@
+/* app.css */
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.section__container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__content {
+  flex: 1;
+}
+
+.header__form {
+  flex: 1;
+}
+
+header {
+  background: #f4f4f4;
+  padding: 20px 0;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav__logo span {
+  color: #4CAF50;
+}
+
+.nav__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav__links .link {
+  margin: 0 15px;
+}
+
+.nav__links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.service__container, .about__container, .why__container, .doctors__container {
+  margin: 40px 0;
+}
+
+.service__header, .about__content, .why__content, .doctors__header {
+  margin-bottom: 20px;
+}
+
+.service__grid, .doctors__grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service__card, .doctors__card {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 30%;
+}
+
+.service__card h4, .doctors__card h4 {
+  margin: 10px 0;
+}
+
+.service__card p, .doctors__card p {
+  margin: 0;
+}
+
+.service__header button {
+  background-color: #4CAF50;
+}
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__col {
+  width: 24%;
+}
+
+.footer__col h4, .footer__col h3 {
+  margin-top: 0;
+}
+
+.footer__socials span {
+  margin: 0 10px;
+  color: #fff;
+}
+
+.footer__bar {
+  background: #222;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer__bar__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__bar p {
+  margin: 0;
+}
+
+.footer__bar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav__links {
+    flex-direction: column;
+  }
+  
+  .nav__links .link {
+    margin: 10px 0;
+  }
+
+  .service__grid, .doctors__grid {
+    flex-direction: column;
+  }
+
+  .service__card, .doctors__card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
